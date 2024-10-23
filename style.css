@@ -21,7 +21,7 @@ header {
 nav {
     padding-bottom: 20px;
     margin-left: auto;
-    min-width: 371.984px;/* Set a minimum width */
+    min-width: 371.984px; /* Set a minimum width */
     max-width: 371.984px; /* Set a maximum width */
 }
 
@@ -36,18 +36,24 @@ nav a.active {
 }
 
 body {
-    max-width: 960px;
     margin: auto;
     background-image: url("images/bg800bulbs.jpg");
     background-color: #ffffff;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 100vh; /* Ensure body takes full height of the viewport */
+    margin: 0; /* Remove default margin */
+    padding: 10px; /* Add padding to the body */
 }
 
 .page {
     max-width: 960px;
-    margin: 20px auto 20px;
+    width: 100%;
+    margin: 0 auto; 
     padding: 20px;
     background-color: #ffffff;
     border-radius: 15px;
@@ -59,6 +65,11 @@ body {
     margin-right: -20px; 
 }
 
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 h1 {
     font-size: 24px; 
 }
@@ -251,4 +262,50 @@ footer {
     margin-bottom: -20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+@media (max-width: 600px) {
+    
+    nav {
+        display: flex;
+        flex-direction: row; /* Change from column to row */
+        justify-content: center; /* Center items horizontally */
+        align-items: center;
+        padding-bottom: 10px;
+        margin-left: 0;
+        min-width: auto;
+        max-width: 100%;
+    }
 
+    nav a {
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 600px) {
+    
+    .staff-table table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .staff-table th, .staff-table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .staff-table th {
+        text-align: left;
+        display: none;
+    }
+
+    .staff-table tbody tr {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .staff-table tbody tr td {
+        border-top: none;
+    }
+}
