@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensure space between logo and nav */
+}
+
+.logo {
+    width: 32px;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+nav {
+    padding-bottom: 20px;
+    margin-left: auto;
+    min-width: 371.984px;/* Set a minimum width */
+    max-width: 371.984px; /* Set a maximum width */
+}
+
+nav a {
+    text-decoration: none; 
+    color: #000000; 
+    padding: 10px;
+}
+
+nav a.active {
+    font-weight: bold;
+}
+
+body {
+    max-width: 960px;
+    margin: auto;
+    background-image: url("images/bg800bulbs.jpg");
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.page {
+    max-width: 960px;
+    margin: 20px auto 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.banner {
+    margin-left: -20px; 
+    margin-right: -20px; 
+}
+
+h1 {
+    font-size: 24px; 
+}
+
+.content-image {
+    float: right;
+    margin: 0 0 10px 20px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.testimonial {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #ccc; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial .customer-image {
+    float: left;
+    margin-right: 20px;
+}
+
+.testimonial p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.button-container {
+    text-align: center; 
+    margin-top: 50px; 
+}
+
+.back-to-top {
+    display: inline-block;
+    padding: 10px 100px; 
+    width: auto; 
+    background-color: #cccccc; 
+    color: #000000; 
+    border: 1px solid #999999; 
+    border-radius: 20px; 
+    text-decoration: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #999999; 
+    border-color: #666666; 
+    color: #ffffff; 
+}
+
+.staff-table {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.staff-table h2 {
+    margin-top: 0;
+    color: #000000;
+    text-align: center;
+}
+
+.staff-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.staff-table th,
+.staff-table td {
+    padding: 10px;
+    border-top: 1px solid #cccccc;
+}
+
+.staff-table th {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.staff-table tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+.staff-table a {
+    text-decoration: none;
+}
+
+.staff-table a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #cccccc; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    margin-top: 0;
+    color: #000000;
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.about-section {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h1 {
+    margin-top: 0;
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+}
+
+.about-section hr {
+    border: none;
+    border-top: 1px solid #cccccc;
+    margin: 10px 0;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+}
+
+footer {
+    background-color: #b9692e;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: 50px;
+    margin-bottom: -20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
